@@ -9,7 +9,7 @@ function Upload() {
         const formdata = new FormData()
         formdata.append('file', file)
 
-        axios.post("http://localhost:3000/api/user",{data: 'form', "content-type": "multipart/form-data"}, formdata)
+        axios.post("https://job-hunter-lzvu.vercel.app/api/user",{data: 'form', "content-type": "multipart/form-data"}, formdata)
         .then(res => {
             console.log(res)
         })

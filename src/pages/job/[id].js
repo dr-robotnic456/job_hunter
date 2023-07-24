@@ -19,7 +19,7 @@ function SingleItem() {
 
   const job = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/api/job/${id}`)
+      const response = await axios.get(`https://job-hunter-lzvu.vercel.app/api/job/${id}`)
       setJobData(response.data)
     } catch (error) {
       console.log(error)

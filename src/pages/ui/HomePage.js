@@ -89,7 +89,7 @@ function HomePage() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/api/job");
+      const response = await axios.get("https://job-hunter-lzvu.vercel.app/api/job");
       const jobData = response.data;
       setJobsData(jobData);
     } catch (err) {
@@ -99,7 +99,7 @@ function HomePage() {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/api/categories");
+      const response = await axios.get("https://job-hunter-lzvu.vercel.app/api/categories");
       const categoriesData = response.data;
       setCategory(categoriesData);
     } catch (err) {

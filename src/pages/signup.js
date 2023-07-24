@@ -44,7 +44,7 @@ const SignUp = () => {
                 password
             };
 
-            const user = await axios.post("http://localhost:3000/api/user/data", userData);
+            const user = await axios.post("https://job-hunter-lzvu.vercel.app/api/user/data", userData);
             console.log(user)
             router.push('/login');
 

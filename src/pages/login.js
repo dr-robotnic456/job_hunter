@@ -24,7 +24,7 @@ const Login = ({setSession}) => {
     e.preventDefault()
 
       try{
-        const response = await axios.post("http://localhost:3000/api/user/login", {email, password})
+        const response = await axios.post("https://job-hunter-lzvu.vercel.app/api/user/login", {email, password})
         const user = response.data
         const token = response.data.token;
         setSession(true)

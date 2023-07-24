@@ -54,7 +54,7 @@ const Login = ({setSession}) => {
 
         {/* form */}
         <form className="flex flex-col gap-3" onSubmit={handleLogin}>
-          {error && <div>{error}</div>}
+          {error && <div className="text-red-500 font-bold">{error}</div>}
           <div className={styles.input_group}>
             <input type="email" name="email" placeholder="Email" className={styles.input_text} value={email} onChange={(e) => setEmail(e.target.value)}/>
             <span className="icon px-3 flex items-center"><HiAtSymbol size={20} /></span>

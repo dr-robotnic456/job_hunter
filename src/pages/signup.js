@@ -70,7 +70,7 @@ const SignUp = () => {
         {/* form */}
         <form onSubmit={handleSubmit}
           className="flex flex-col gap-3">
-            {error && <div>{error}</div>}
+            {error && <div className="text-red-500 font-bold">{error}</div>}
           <div className={styles.input_group}>
             <input type="text" name="username" placeholder="Username" className={styles.input_text} onChange={(e) => setUsername(e.target.value)}/>
             <span className="icon px-3 flex items-center"><FaUserCircle size={20} /></span>

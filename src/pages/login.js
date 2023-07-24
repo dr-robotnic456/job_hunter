@@ -49,7 +49,7 @@ const Login = ({setSession}) => {
       <section className="w-3/4 mx-auto flex flex-col gap-3">
         <div className="title">
           <h1 className="text-gray-800 text-4xl font-bold py-2"></h1>
-          <p className="flex w-3/4 mx-auto text-gray-400"> hello hello hello hello hello</p>
+          <p className="flex w-3/4 mx-auto text-gray-400">Login</p>
         </div>
 
         {/* form */}

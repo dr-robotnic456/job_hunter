@@ -1,8 +1,7 @@
 import { Inter } from 'next/font/google'
-import HomePage from './ui/HomePage'
-import Auth from './components/Auth'
 import { useState } from 'react'
 import Login from './login'
+import HomePage from './HomePage'
 
 const inter = Inter({ subsets: ['latin'] })
 

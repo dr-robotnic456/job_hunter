@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import Header from '../components/Header'
-import Sidebar from '../components/sidebar/Sidebar'
-import Jobs from '../components/Jobs'
+import Header from './components/Header'
+import Sidebar from './components/sidebar/Sidebar'
+import Jobs from './components/Jobs'
 import axios from 'axios';
-import Card from '../components/Card';
-import Auth from '../components/Auth';
+import Card from './components/Card';
+import Auth from './components/Auth';
 
 function HomePage() {
   const [jobsData, setJobsData] = useState([])

@@ -12,9 +12,9 @@ function Home() {
   }
   return (
     <div>
-      {session?(
+      {/* {session?( */}
         <HomePage handleSignOut = {handleSignOut}/>
-      ): (<Login setSession = {setSession}/>)}
+      {/* ): (<Login setSession = {setSession}/>)} */}
     </div>
   )
 }

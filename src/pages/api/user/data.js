@@ -18,23 +18,18 @@ const handler = async(req, res) => {
                 console.log(error)
             }
 
-        case "POST":
+            case "POST":
                 let password = req.body.password;
                 if (!password) {
-                    return res.status(400).json({ message: "Please provide your password" })
+                    return res.status(400).json({ message: "Please provide your password" });
                 }
-                password = await bcrypt.hash(password, 10)
-                const user = await User.create({ ...req.body, password: password })
+                password = await bcrypt.hash(password, 10);
+                const user = await User.create({ ...req.body, password: password });
                 if (!user) {
-                    return res.status(401).json({ message: "Invalid Data" })
+                    return res.status(401).json({ message: "Invalid Data" });
                 }
-                const token = jwt.sign({
-                    email: user.email},
-                    secret, {
-                    expiresIn:"1h"
-                })
-                return res.status(200).json(user, token)
-            
+                const token = jwt.sign({ email: user.email }, secret, { expiresIn: "1h" });
+                return res.status(200).json({ token }); // Send only the token in the response
             
     
         default:

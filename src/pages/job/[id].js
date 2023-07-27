@@ -39,7 +39,7 @@ function SingleItem() {
             {title}
           </h1>
         </div>
-        <div className='items-center justify-center'>
+        <div className='items-center justify-center p-10'>
           <h2 className='uppercase text-xl'>{company}</h2>
           <p className='uppercase text-lg mb-1'>{location}</p>
           <h3 className='text-center text-2xl'>Description</h3>
@@ -55,7 +55,7 @@ function SingleItem() {
           <p className='uppercase text-xl font-medium'>{employmentType}</p>
         </div>
         <div className=''>
-          <button className='bg-green-500 items-center justify-center p-5 rounded-full uppercase font-bold'>Apply</button>
+          <button className='bg-green-500 items-center justify-center p-5 rounded-full text-center uppercase font-bold'>Apply</button>
         </div>
       </div>
     </div>

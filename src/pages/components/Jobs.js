@@ -15,7 +15,7 @@ const Jobs = ({ result, handleClick, category, isActive, setIsActive }) => {
     );
   } else {
     return (
-      <div id='job' className='bg-white flex-col h-screen flex flex-wrap md:w-[75%] lg:w-[75%] xl:w-[75%] w-[75%] flex-start gap-1 dark:bg-black'>
+      <div id='job' className='bg-white flex-col h-screen flex flex-wrap  w-full ml-[25%] flex-start gap-1 dark:bg-black'>
         <CategoryCard handleClick = {handleClick} category = {category} isActive={isActive} setIsActive={setIsActive}/>
         <div className="flex">
           {result}

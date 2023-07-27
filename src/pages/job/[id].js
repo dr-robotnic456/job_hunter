@@ -39,14 +39,14 @@ function SingleItem() {
           </h1>
         </div>
         <div className='items-center justify-center'>
-          <h2 className='uppercase text-4xl'>{company}</h2>
-          <p className='uppercase text-2xl mb-1'>{location}</p>
-          <h3 className='text-center'>Description</h3>
-          <p className='uppercase text-2xl'>{description}</p>
-          <h3 className='text-center'>Requirements</h3>
-          <ul>
+          <h2 className='uppercase text-xl'>{company}</h2>
+          <p className='uppercase text-lg mb-1'>{location}</p>
+          <h3 className='text-center text-2xl'>Description</h3>
+          <p className='uppercase text-sm'>{description}</p>
+          <h3 className='text-center text-xl uppercase'>Requirements</h3>
+          <ul className='list-disc text-white'>
             {requirementsArray.map((requirement, index) => (
-              <li key={index} className='uppercase text-2xl font-semibold'>
+              <li key={index} className=' text-sm font-semibold'>
                 {requirement}
               </li>
             ))}

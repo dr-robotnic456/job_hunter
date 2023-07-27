@@ -26,8 +26,8 @@ function SingleItem() {
 
   const { title, description, employmentType, location, company, requirements } = jobData;
 
-  // Transform the requirements string into an array
-  const requirementsArray = requirements ? requirements.split(',').map((req) => req.trim()) : [];
+  // Ensure requirements is an array
+  const requirementsArray = Array.isArray(requirements) ? requirements : [requirements];
 
   return (
     <div>

@@ -17,7 +17,7 @@ function Home() {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Homepage</title>
     </Head>
-    <div>
+    <div className='w-full'>
       {/* {session?( */}
         <HomePage handleSignOut = {handleSignOut}/>
       {/* ): (<Login setSession = {setSession}/>)} */}

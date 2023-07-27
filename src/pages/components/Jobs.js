@@ -5,7 +5,7 @@ import CategoryCard from '../components/CategoryCard';
 
 const Jobs = ({ result, handleClick, category, isActive, setIsActive }) => {
   return (
-    <div id='job' className='bg-white flex-col h-screen w-full overflow-hidden max-w-screen-lg flex-start gap-1 dark:bg-black'>
+    <div id='job' className='bg-white flex-col h-screen w-full max-w-screen-lg flex-start gap-1 dark:bg-black'>
       <CategoryCard handleClick={handleClick} category={category} isActive={isActive} setIsActive={setIsActive} />
       <div className="flex flex-wrap">
         {result && result.length === 0 ? (

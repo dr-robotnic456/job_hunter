@@ -19,7 +19,7 @@ function SingleItem() {
 
   const job = async () => {
     try {
-      const response = await axios.get(`https://job-hunter-lzvu.vercel.app/api/job/${id}`)
+      const response = await axios.get(`api/job/${id}`)
       setJobData(response.data)
     } catch (error) {
       console.log(error)
@@ -30,16 +30,15 @@ function SingleItem() {
   return (
     <div>
       <Header />
-      <div className='justify-center p-5 bg-blue-600 items-center'>
+      <div className='justify-center p-5 bg-gray-600 items-center'>
         <div className='items-center justify-center'>
           <h1 className='font-extrabold text-[100px] uppercase text-center underline'>
             {title}
           </h1>
         </div>
         <div className='items-center justify-center'>
-          {/* <h2 className='font-bold text-9xl'>{user}</h2> */}
-          <p className='uppercase text-7xl'>{company}</p>
-          <p className='uppercase text-7xl'>{location}</p>
+          <h2 className='uppercase text-4xl'>{company}</h2>
+          <p className='uppercase text-2xl'>{location}</p>
           <p className='uppercase text-2xl'>{description}</p>
           <p className='uppercase text-2xl font-semibold'>{requirements}</p>
           <p className='uppercase text-xl font-medium'>{employmentType}</p>

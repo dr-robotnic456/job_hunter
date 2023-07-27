@@ -116,7 +116,7 @@ function HomePage() {
       <div>
         <Header query={query} handleInputChange={handleInputChange}/>
       </div>
-      <div className='flex w-full'>
+      <div className='flex'>
         <Sidebar handleChange={handleChange} locationQuery={locationQuery} handleLocationChange={handleLocationChange} />
         <Jobs result={result} category={category} isActive={isActive} setIsActive={setIsActive} handleClick={handleClick} />
       </div>

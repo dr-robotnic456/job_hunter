@@ -106,15 +106,13 @@ function HomePage() {
     }
   };
   return (
-    <div className=' w-full'>
-      <div className='flex flex-col bg-white'>
+    <div className='flex flex-col bg-white w-screen h-screen'>
       <div>
         <Header query={query} handleInputChange={handleInputChange}/>
       </div>
       <div className='flex w-full'>
         <Sidebar handleChange={handleChange} locationQuery={locationQuery} handleLocationChange={handleLocationChange} />
         <Jobs result={result} category={category} isActive={isActive} setIsActive={setIsActive} handleClick={handleClick} />
-      </div>
       </div>
     </div>
   )

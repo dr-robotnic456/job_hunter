@@ -112,7 +112,7 @@ function HomePage() {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Homepage</title>
     </Head>
-    <div className='flex-col bg-white w-screen'>
+    <div className='flex-col bg-white'>
       <div>
         <Header query={query} handleInputChange={handleInputChange}/>
       </div>

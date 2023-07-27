@@ -9,7 +9,7 @@ const Jobs = ({ result, handleClick, category, isActive, setIsActive }) => {
       <CategoryCard handleClick={handleClick} category={category} isActive={isActive} setIsActive={setIsActive} />
       <div className="flex flex-wrap">
         {result && result.length === 0 ? (
-          <div className='text-red-700 items-center flex flex-col justify-center text-center text-9xl uppercase dark:bg-black'>
+          <div className='text-red-700 items-center flex flex-col justify-normal mt-0 text-center text-9xl uppercase dark:bg-black'>
             No Data Found!
           </div>
         ) : (

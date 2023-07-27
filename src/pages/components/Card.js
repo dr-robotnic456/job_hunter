@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 function Card({ id, title, description, employmentType,company }) {
     return (
-        <div className='card bg-[#f1f1f1] h-[300px] w-1/4 sm:w-full md:w-1/4 lg:w-1/4 xl:w-1/4 p-6 uppercase my-2 mx-2 rounded-xl dark:bg-gray-800 overflow-hidden'>
+        <div className='card bg-[#f1f1f1] h-[300px] w-2/4 sm:w-full md:w-2/4 lg:w-1/4 xl:w-1/4 p-6 uppercase my-2 mx-2 rounded-xl dark:bg-gray-800 overflow-hidden'>
             <h2 className='card-title text-xl font-bold mb-2 text-white'>{title}</h2>
             {/* <p className='card-description text-gray-600 dark:text-white capitalize'>
                 {description.slice(0,30)}

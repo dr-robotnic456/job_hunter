@@ -33,7 +33,7 @@ function SingleItem() {
     <div>
       <Header />
       <div className='bg-white dark:bg-gray-900'>
-      <div className='justify-center p-5 bg-gray-600 items-center w-[90%] shadow-md rounded-lg mx-auto my-3'>
+      <div className='justify-center p-10 bg-gray-600 items-center w-[90%] shadow-md rounded-lg mx-auto my-3'>
         <div className='items-center justify-center'>
           <h1 className='font-extrabold text-[100px] uppercase text-center underline'>
             {title}

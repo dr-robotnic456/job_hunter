@@ -4,6 +4,7 @@ import Sidebar from './components/sidebar/Sidebar'
 import Jobs from './components/Jobs'
 import axios from 'axios';
 import Card from './components/Card';
+import Head from 'next/head';
 
 function HomePage() {
   const [jobsData, setJobsData] = useState([])
@@ -106,7 +107,11 @@ function HomePage() {
     }
   };
   return (
-    <div className='flex flex-col bg-white w-full'>
+    <>
+    <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </Head>
+    <div className='flex flex-col bg-white w-screen'>
       <div>
         <Header query={query} handleInputChange={handleInputChange}/>
       </div>
@@ -115,6 +120,7 @@ function HomePage() {
         <Jobs result={result} category={category} isActive={isActive} setIsActive={setIsActive} handleClick={handleClick} />
       </div>
     </div>
+    </>
   )
 }
 

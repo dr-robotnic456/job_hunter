@@ -26,7 +26,7 @@ function SingleItem() {
     }
   }
 
-  const { title, description, employmentType, salary, requirements, location, company, user } = jobData
+  const { title, description, employmentType, requirements, location, company, user } = jobData
   return (
     <div>
       <Header />
@@ -48,7 +48,6 @@ function SingleItem() {
           <button className='bg-green-500 items-center justify-center p-5 rounded-full uppercase font-bold'>Apply</button>
         </div>
       </div>
-
     </div>
   )
 }

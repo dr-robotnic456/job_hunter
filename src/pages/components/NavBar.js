@@ -33,7 +33,7 @@ function NavBar() {
   }
 
   return (
-    <nav className='flex justify-center items-center h-12 relative bg-blue-950'>
+    <nav className='flex justify-center items-center h-12 relative bg-blue-950 w-full'>
       <ul className='justify-center items-center m-1 w-[90%] text-black uppercase font-bold cursor-pointer'>
         <div className='flex justify-between items-center m-3'>
           <div className='flex items-center m-3'>

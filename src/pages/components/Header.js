@@ -7,7 +7,7 @@ import Image from 'next/image';
 function Header({ query, handleInputChange }) {
 
   return (
-    <div className='bg-[#f1f1f1] h-[80vh] mr-2 justify-center  items-center w-full dark:bg-gray-800 relative'>
+    <div className='bg-[#f1f1f1] h-[80vh] mr-2 justify-center  items-center w-screen dark:bg-gray-800 relative'>
       <div className='w-full h-full rounded-b-[200px] relative overflow-hidden'>
         <Image src={nav} alt='Background' layout='fill' objectFit='cover' className='opacity-40' />
 

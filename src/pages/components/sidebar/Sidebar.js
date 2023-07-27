@@ -6,7 +6,7 @@ import Employment from './Employment';
 function Sidebar({ handleChange, handleLocationChange, locationQuery }) {
 
   return (
-    <div className='bg-[#f1f1f1] w-1/4 dark:bg-gray-800 '>
+    <div className='bg-[#f1f1f1] w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/4 dark:bg-gray-800 '>
       <ul>
         <div className='justify-center items-left ml-3 flex flex-col text-black dark:text-white'>
           <li className='mb-4 mt-3 font-bold text-xl'>Filter</li>

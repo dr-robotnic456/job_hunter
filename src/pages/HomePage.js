@@ -106,7 +106,7 @@ function HomePage() {
     }
   };
   return (
-    <div className='flex flex-col bg-white w-screen h-screen'>
+    <div className='flex flex-col bg-white w-full'>
       <div>
         <Header query={query} handleInputChange={handleInputChange}/>
       </div>

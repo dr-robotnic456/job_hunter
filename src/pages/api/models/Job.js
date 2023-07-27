@@ -29,11 +29,7 @@ const JobSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Category",
     required: true
-  },
-  // user: {
-  //   type: mongoose.Schema.Types.ObjectId,
-  //   ref: "User"
-  // },
+  }
 });
 
 const Job = mongoose.models.Job || mongoose.model("Job", JobSchema);

@@ -19,14 +19,14 @@ function SingleItem() {
 
   const job = async () => {
     try {
-      const response = await axios.get(`api/job/${id}`)
+      const response = await axios.get(`/api/job/${id}`)
       setJobData(response.data)
     } catch (error) {
       console.log(error)
     }
   }
 
-  const { title, description, employmentType, requirements, location, company, user } = jobData
+  const { title, description, employmentType, requirements, location, company } = jobData
   return (
     <div>
       <Header />

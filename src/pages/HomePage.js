@@ -110,6 +110,7 @@ function HomePage() {
     <>
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Homepage</title>
     </Head>
     <div className='flex flex-col bg-white w-screen'>
       <div>
